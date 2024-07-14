@@ -35,15 +35,15 @@ Our contracts are deployed **Base Sepolia** and **Inco Gentry** currently. All o
 
 ### NFT contract (Base Sepolia)
 
-0xd705ad2882918Fa5C2D8dD7210f4f5C6179fEbAb
-https://base-sepolia.blockscout.com/address/0xd705ad2882918Fa5C2D8dD7210f4f5C6179fEbAb#code
+0x20616425CF2f1ed394CD95Ed6759db466CEA77cB
+https://base-sepolia.blockscout.com/address/0x20616425CF2f1ed394CD95Ed6759db466CEA77cB#code
 
 ### Encrypted ERC20 (Inco Gentry)
 
-0x20b9769431675a91423Eb4fbc481008CF2AF811a
-https://explorer.testnet.inco.org/address/0x20b9769431675a91423Eb4fbc481008CF2AF811a#code
+0x512128016F498bC16F24D84188A4232948e56be7
+https://explorer.testnet.inco.org/address/0x512128016F498bC16F24D84188A4232948e56be7#code
 
 ### Encrypted NFT Market (Inco Gentry)
 
-0xC0AdDE3d77bb929CB282564F0227f6EE092F3e30
-https://explorer.testnet.inco.org/address/0xC0AdDE3d77bb929CB282564F0227f6EE092F3e30#code
+0x15338d8B33a0FCFb1f610CcD99a1116840D0a57e
+https://explorer.testnet.inco.org/address/0x15338d8B33a0FCFb1f610CcD99a1116840D0a57e#code

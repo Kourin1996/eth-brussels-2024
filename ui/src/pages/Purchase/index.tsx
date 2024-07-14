@@ -89,7 +89,7 @@ export const PurchasePage = () => {
         console.log("debug::nftId", nftId);
         setNftId(nftId);
 
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 6000));
         setActiveStep(3);
       } catch (error) {
         console.error(error);

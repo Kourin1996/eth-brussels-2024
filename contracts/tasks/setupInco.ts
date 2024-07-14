@@ -3,7 +3,7 @@ import type { TaskArguments } from "hardhat/types";
 
 import { createInstance } from "../test/instance";
 
-const NFT_ADDRESS = "0xd705ad2882918Fa5C2D8dD7210f4f5C6179fEbAb";
+const NFT_ADDRESS = "0x20616425CF2f1ed394CD95Ed6759db466CEA77cB";
 const ACCOUNT_2_ADDRESS = "0x6f0609f6a920101Faf5A64F6F69BDcf5d4470eC6";
 
 task("task:setupInco").setAction(async function (_taskArguments: TaskArguments, { ethers }) {
