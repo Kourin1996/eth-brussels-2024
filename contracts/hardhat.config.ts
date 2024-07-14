@@ -56,6 +56,7 @@ const config: HardhatUserConfig = {
     src: "./contracts",
   },
   networks: {
+    localhost: {},
     incoGentry: {
       accounts: PRIVATE_KEYS,
       chainId: 9090,

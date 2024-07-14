@@ -51,6 +51,18 @@ task("task:uploadMetadata").setAction(async function (taskArguments: TaskArgumen
             value: ":userAddress",
           },
         },
+        { operator: "or" },
+        {
+          contractAddress: NFT_CONTRACT_ADDRESS,
+          standardContractType: "ERC721",
+          chain: "baseSepolia",
+          method: "isPublic",
+          parameters: [i.toString()],
+          returnValueTest: {
+            comparator: "=",
+            value: "true",
+          },
+        },
       ];
 
       const litRes = await LitJsSdk.encryptString(

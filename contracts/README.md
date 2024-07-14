@@ -1,5 +1,7 @@
 # contracts
 
+Smart contracts written in Solidity
+
 ## Usage
 
 ### Pre Requisites
@@ -24,32 +26,28 @@ npx hardhat compile
 
 ### Deploy
 
-Deploy the ERC20 to Inco Gentry Testnet Network:
+Deploy NFT contract into Base Sepolia
 
 ```sh
-npx hardhat deploy --network inco
+npx hardhat task:setupBase --network baseSepolia
 ```
 
-### Lint Solidity
-
-Lint the Solidity code:
+Deploy confidential ERC20 and NFTMarketPlace contract into Inco Gentry
 
 ```sh
-pnpm lint:sol
+npx hardhat task:setupInco --network incoGentry
 ```
 
-### Lint TypeScript
+### Setup NFT Metadata
+
+Upload images into Lighthouse
 
 ```sh
-pnpm lint:ts
+npx hardhat task:uploadImages
 ```
 
-### Tasks
-
-#### Deploy EncryptedERC20
-
-Deploy a new instance of the EncryptedERC20 contract via a task:
+Upload encrypted NFT metadata into Lighthouse
 
 ```sh
-pnpm task:deployERC20
+npx hardhat task:uploadMetadata
 ```

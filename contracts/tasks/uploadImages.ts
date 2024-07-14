@@ -12,12 +12,12 @@ const API_KEY = process.env.LIGHT_HOUSE_API_KEY!;
 const files = ["card1.png", "card2.png", "card3.png", "card4.png", "card5.png", "card6.png", "card7.png", "card8.png"];
 
 task("task:uploadImages").setAction(async function (taskArguments: TaskArguments, { ethers }) {
-  const res: any = {};
+  const res = []
 
   for (const file of files) {
     const response = await lighthouse.upload(resolve(__dirname, "..", "files", file), API_KEY!);
 
-    res[file] = response.data;
+    res.push(response.data);
   }
 
   console.log("res", JSON.stringify(res));
