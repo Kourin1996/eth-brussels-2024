@@ -57,6 +57,18 @@ task("task:setupBase").setAction(async function (taskArguments: TaskArguments, {
           value: ":userAddress",
         },
       },
+      { operator: "or" },
+      {
+        contractAddress: nftAddress,
+        standardContractType: "ERC721",
+        chain: "baseSepolia",
+        method: "isPublic",
+        parameters: [i.toString()],
+        returnValueTest: {
+          comparator: "=",
+          value: "true",
+        },
+      },
     ];
 
     const litRes = await LitJsSdk.encryptString(

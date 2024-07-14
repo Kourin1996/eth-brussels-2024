@@ -9,13 +9,23 @@ contract NFT is ERC721URIStorage, Ownable {
     Counters.Counter private _tokenIds;
 
     mapping(uint256 => string) public uris;
+    mapping(uint256 => bool) public revealMap;
 
     constructor(string memory name, string memory symbol) ERC721(name, symbol) {}
+
+    function isPublic(uint256 nftId) public view returns (bool) {
+        return revealMap[nftId];
+    }
 
     function mint(string memory tokenURI) external onlyOwner {
         uint256 newTokenId = _tokenIds.current();
         uris[newTokenId] = tokenURI;
         _tokenIds.increment();
+    }
+
+    function reveal(uint256 nftId) external {
+        require(ownerOf(nftId) == msg.sender, "Only owner can reveal NFT");
+        revealMap[nftId] = true;
     }
 
     // message from inco
