@@ -18,14 +18,14 @@ Join Tamatebako today and embark on an exciting journey of discovery and collect
 
 TamateBako utilizes a variety of tools and services to provide a seamless and secure user experience:
 
-- **Smart Contract Development**: [Solidity](https://soliditylang.org) - For writing secure and efficient smart contracts.
-- **Smart Contract Development Environment**: [Hardhat](https://hardhat.org) - For developing and bulding smart contracts.
-- **Frontend Framework**: [React](https://reactjs.org) - For building a dynamic and responsive user interface.
+- [Solidity](https://soliditylang.org): **Smart Contract Development** - For writing secure and efficient smart contracts.
+- [Hardhat](https://hardhat.org): **Smart Contract Development Environment** - For developing and bulding smart contracts.
+- [React](https://reactjs.org): **Frontend Framework** - For building a dynamic and responsive user interface.
 
-- **Blockchain Platform**: [Base](https://ethereum.org) - For minting and managing NFTs with easily and low gas fee.
-- **Distributed File Storage**: [Filecoin](https://filecoin.io), [Lighthouse](https://files.lighthouse.storage) - To ensure decentralized and secure storage of NFT assets.
-- **Confidential Computing**: [Inco](https://www.inco.org) - Utilizes Inco Network with FHE (Fully Homomorphic Encryption) computation to keep calculations on smart contracts private, forming the core of our service.
-- **Cross chain messaging**: [Hyperlane](https://hyperlane.xyz) - Uses the secure Hyperlane bridge to automatically convey results of confidential computations to the Base chain where NFTs are located.
-- **Encryption**: [Lit Protocol](https://developer.litprotocol.com) - Allows each NFT holder to choose whether to keep their information private or public, ensuring flexible and secure data privacy control.
-- **Blockchain Explorer**: [Blockscount](https://www.blockscout.com) - A blockchain explorer that supports both Base and Inco Network, facilitating easier debugging during development.
+- [Base](https://ethereum.org): **Blockchain Platform** - For minting and managing NFTs with easily and low gas fee.
+- [Filecoin](https://filecoin.io), [Lighthouse](https://files.lighthouse.storage): **Distributed File Storage** - To ensure decentralized and secure storage of NFT assets.
+- [Inco](https://www.inco.org): **Confidential Computing** - Utilizes Inco Network with FHE (Fully Homomorphic Encryption) computation to keep calculations on smart contracts private, forming the core of our service.
+- [Hyperlane](https://hyperlane.xyz): **Cross chain messaging** - Uses the secure Hyperlane bridge to automatically convey results of confidential computations to the Base chain where NFTs are located.
+- [Lit Protocol](https://developer.litprotocol.com): **Encryption** - Allows each NFT holder to choose whether to keep their information private or public, ensuring flexible and secure data privacy control.
+- [Blockscount](https://www.blockscout.com): **Blockchain Explorer**: - A blockchain explorer that supports both Base and Inco Network, facilitating easier debugging during development.
 
