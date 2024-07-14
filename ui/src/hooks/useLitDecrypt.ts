@@ -86,6 +86,18 @@ const createAccessControlConditions = (nftContractAddress: string, nftId: number
         value: ":userAddress",
       },
     },
+    { operator: "or" },
+    {
+      contractAddress: nftContractAddress,
+      standardContractType: "ERC721",
+      chain: "baseSepolia",
+      method: "isPublic",
+      parameters: [nftId.toString()],
+      returnValueTest: {
+        comparator: "=",
+        value: "true",
+      },
+    },
   ];
 };
 
