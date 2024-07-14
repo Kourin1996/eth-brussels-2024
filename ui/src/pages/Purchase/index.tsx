@@ -25,7 +25,7 @@ import { config } from "../../wagmi";
 import { ethers } from "ethers";
 import NFTMarketABI from "../../abi/EncryptedNFTMarket.json";
 import { usePurchase } from "../../hooks/usePurchase";
-import { useOwnerOf } from "../../hooks/useOwnerOf";
+// import { useOwnerOf } from "../../hooks/useOwnerOf";
 
 export const PurchasePage = () => {
   const [approveTxHash, setApproveTxHash] = useState<string | undefined>(undefined);
@@ -34,7 +34,7 @@ export const PurchasePage = () => {
 
   const approve = useApprove(INCO_NFT_MARKET_ADDRESS);
   const purchase = usePurchase("0x65d4Ec89Ce26763B4BEa27692E5981D8CD3A58C7");
-  const ownerOf = useOwnerOf();
+  // const ownerOf = useOwnerOf();
 
   const { address } = useAccount();
 

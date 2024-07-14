@@ -7,7 +7,6 @@ import {
   createSiweMessageWithRecaps,
   generateAuthSig,
 } from "@lit-protocol/auth-helpers";
-import { LitNetwork } from "@lit-protocol/constants";
 import { BASE_NFT_ADDRESS } from "../consts/envs";
 
 const litNodeClient = new LitJsSdk.LitNodeClient({

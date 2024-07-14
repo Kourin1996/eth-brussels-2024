@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "../../components/Card";
 import { Button, Center, Container, Heading } from "@chakra-ui/react";

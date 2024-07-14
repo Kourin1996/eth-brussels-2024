@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Heading } from "@chakra-ui/react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { readContract } from "@wagmi/core";
@@ -35,13 +35,13 @@ export const ViewPage = () => {
     secondRender.current = true;
 
     (async () => {
-      const result: string = await readContract(config, {
+      const result = await readContract(config, {
         abi: NFT_ABI,
         address: BASE_NFT_ADDRESS,
         args: [nftId],
         functionName: "tokenURI",
         chainId: BASE_SEPOLIA_CHAIN_ID,
-      });
+      }) as string;
 
       console.log("debug::metadata hash", result);
 
@@ -55,7 +55,7 @@ export const ViewPage = () => {
 
       console.log("debug::result", { ciphertext, dataToEncryptHash });
 
-      const decrypted = await litDecrypt(ciphertext, dataToEncryptHash, nftId);
+      const decrypted = await litDecrypt(ciphertext, dataToEncryptHash, nftId!);
 
       const { name, description, image } = JSON.parse(decrypted);
       setTitle(name);
